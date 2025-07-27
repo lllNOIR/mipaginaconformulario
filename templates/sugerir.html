@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="superior">
+    <h1>Sugerir Biografía de Cantante</h1>
+</div>
+<br><br>
+<form method="POST" class="formulario-sugerencia">
+    <label for="nombre">Nombre del cantante:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="historia">Historia:</label>
+    <textarea id="historia" name="historia" rows="5" required></textarea>
+
+    <label for="motivo">¿Por qué debe ser agregado?</label>
+    <textarea id="motivo" name="motivo" rows="3" required></textarea>
+
+    <button type="submit">Enviar sugerencia</button>
+</form>
+<div class="botones">
+    <a href="{{url_for('inicio')}}">Regresar</a>
+</div>
+{% endblock %}

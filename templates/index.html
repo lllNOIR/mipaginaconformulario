@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div style="display: flex; justify-content: flex-start;">
+    <div class="botones a:hover"><a href="{{ url_for('sugerir') }}" class="btn-sugerir">Sugerir Biografía</a></div>
+</div>
+
+<div class="superior">
+    <h1>BIOGRAFIA DE ARTISTAS</h1>
+</div>
+
+<br><br><br><br><br><br><br><br>
+    
+<div class="menu">
+    
+
+    <div class="portada">
+        <a href="{{url_for('page1')}}">
+        <div class="Roa">
+            <img src="{{url_for('static', filename='fotos/ROA.jpg')}}" alt="">
+        </div>
+        <h1>Roa</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page2')}}">
+        <div class="Luar">
+            <img src="{{url_for('static', filename='fotos/LUAR.jpeg')}}" alt="">
+        </div>
+        <h1>Luar La L</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page3')}}">
+        <div class="Blessd">
+            <img src="{{url_for('static', filename='fotos/BLESSD.jpg')}}" alt="">
+        </div>
+        <h1>Blessd</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page4')}}">
+        <div class="Hades">
+            <img src="{{url_for('static', filename='fotos/HADES.jpg')}}" alt="">
+        </div>
+        <h1>Hades66</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page5')}}">
+        <div class="Ozuna">
+            <img src="{{url_for('static', filename='fotos/OZUNA.jpg')}}" alt="">
+        </div>
+        <h1>Ozuna</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page6')}}">
+        <div class="Kris">
+            <img src="{{url_for('static', filename='fotos/K.jpg')}}" alt="">
+        </div>
+        <h1>Kris R</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page7')}}">
+        <div class="Bryant">
+            <img src="{{url_for('static', filename='fotos/BRY.jpg')}}" alt="">
+        </div>
+        <h1>Bryant Myers</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page8')}}">
+        <div class="Rels B">
+            <img src="{{url_for('static', filename='fotos/RELS.jpg')}}" alt="">
+        </div>
+        <h1>Rels B</h1>
+        </a>
+    </div>
+
+    <div class="portada">
+        <a href="{{url_for('page9')}}">
+        <div class="MORA">
+            <img src="{{url_for('static', filename='fotos/MORA.jpg')}}" alt="">
+        </div>
+        <h1>Mora</h1>
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}
